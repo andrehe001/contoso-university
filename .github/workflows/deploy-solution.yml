@@ -20,6 +20,7 @@ jobs:
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
           environment-url: ${{ secrets.URL }}
+          user-name: ${{ secrets.USERNAME }}
           app-id: ${{ secrets.APP_ID }}
           client-secret: ${{ secrets.CLIENT_SECRET }}
           tenant-id: ${{ secrets.TENANT_ID }}
